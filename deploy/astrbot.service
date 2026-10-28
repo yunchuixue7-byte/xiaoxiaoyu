@@ -1,0 +1,14 @@
+﻿[Unit]
+Description=AstrBot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root
+Environment=HOME=/root
+ExecStart=/opt/astrbot-venv/bin/astrbot run
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
