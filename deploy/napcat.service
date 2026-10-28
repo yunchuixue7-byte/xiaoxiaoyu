@@ -1,0 +1,16 @@
+﻿[Unit]
+Description=NapCat QQ
+After=network.target xvfb.service
+Wants=xvfb.service
+
+[Service]
+Type=simple
+WorkingDirectory=/root/Napcat/opt/QQ
+Environment=DISPLAY=:99
+Environment=HOME=/root
+ExecStart=/root/Napcat/opt/QQ/qq --no-sandbox
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target
