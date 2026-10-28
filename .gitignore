@@ -1,0 +1,10 @@
+﻿# 密钥与运行时文件，禁止提交
+*.key
+*.pem
+cmd_config.json
+data_v4.db
+*.db
+*.db-*
+.env
+__pycache__/
+*.pyc
