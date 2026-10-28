@@ -1,0 +1,8 @@
+name: astrbot_plugin_deepseek_lady
+display_name: DeepSeek娘增强
+short_desc: 动态注入时间、私聊/群聊场景、深夜困倦状态，不破坏提示词缓存。
+desc: DeepSeek娘增强插件。每轮对话注入当前时间与场景信息（私聊=主人、群聊=群友、深夜困倦），通过 extra_user_content_parts 注入以保护提示词缓存，避免成本暴涨。
+version: v1.0.0
+author: user
+repo: ""
+astrbot_version: ">=4.16,<5"
